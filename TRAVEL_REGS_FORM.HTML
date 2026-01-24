@@ -1,0 +1,207 @@
+<html>
+<head>
+    <title>Travel Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        
+        fieldset {
+            width: 650px;
+            margin: 80px auto;
+            padding: 30px 40px;
+            border: 2px solid #4a90e2;
+            border-radius: 15px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        legend {
+            text-align: center;
+            font-size: 24px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            padding: 0 15px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        label {
+            color: white;
+            font-weight: 500;
+            min-width: 180px;
+            text-align: right;
+            margin-right: 20px;
+        }
+        
+        input, select {
+            flex: 1;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            font-size: 14px;
+            max-width: 350px;
+        }
+        
+        input:focus, select:focus {
+            outline: none;
+            border-color: #4a90e2;
+            background-color: #fffef0;
+        }
+        
+        select {
+            cursor: pointer;
+            background-color: #fff;
+            color: #333;
+        }
+        
+        .radio-group {
+            display: flex;
+            gap: 20px;
+            flex: 1;
+        }
+        
+        .radio-group label {
+            min-width: auto;
+            margin-right: 5px;
+            color: white;
+        }
+        
+        input[type="radio"] {
+            width: auto;
+            margin-right: 5px;
+        }
+        
+        .button-container {
+            text-align: center;
+            margin-top: 25px;
+        }
+        
+        button {
+            padding: 12px 40px;
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: #ee5a52;
+            transform: scale(1.05);
+        }
+        
+        .forgot-password {
+            text-align: center;
+            margin-top: 15px;
+            color: #fff;
+            font-size: 14px;
+        }
+        
+        .forgot-password a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+        
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Travel Registration Form</legend>
+            
+            <div class="form-group">
+                <label for="transport">Mode of Transport:</label>
+                <select id="transport">
+                    <option>-- Select Mode --</option>
+                    <option>Bus</option>
+                    <option>Train</option>
+                    <option>Flight</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="from">From:</label>
+                <input id="from" type="text" placeholder="Departure City" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="to">To:</label>
+                <input id="to" type="text" placeholder="Destination City" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="date">Date of Travelling:</label>
+                <input id="date" type="date" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="firstname">First Name:</label>
+                <input id="firstname" type="text" placeholder="Enter First Name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="lastname">Last Name:</label>
+                <input id="lastname" type="text" placeholder="Enter Last Name">
+            </div>
+            
+            <div class="form-group">
+                <label>Gender:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="Male" required>Male</label>
+                    <label><input type="radio" name="gender" value="Female">Female</label>
+                    <label><input type="radio" name="gender" value="Others">Others</label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input id="age" type="number" placeholder="Enter Age" min="1" max="120">
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input id="phone" type="tel" placeholder="Enter Phone Number">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email ID:</label>
+                <input id="email" type="email" placeholder="Enter Email Address">
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input id="password" type="password" placeholder="Enter Password">
+            </div>
+            
+            <div class="button-container">
+                <button type="submit">Register Now</button>
+            </div>
+            
+            <p class="forgot-password">
+                <a href="#forgot">Forgot password?</a>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
+
+<!-- 
+This HTML code creates a styled travel registration form with various input fields and a submit button.
+The form includes fields for mode of transport, departure and destination cities, travel date, personal details, and a password field.
+The CSS styles enhance the visual appearance of the form, making it user-friendly and attractive.
+The form is centered on the page with a gradient background and includes hover effects for the submit button.
+Fieldsets and legends are used to group related elements and provide a clear title for the form.
+ -->
