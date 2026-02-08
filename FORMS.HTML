@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Instagram Login</title>
+        <style>
+            body {
+                background-color: #fafafa;
+                font-family: sans-serif; 
+                margin: 0;
+            }
+
+            .box {
+                width: 350px;
+                margin: auto;
+                margin-top: 50px; 
+                border: 1px solid #dbdbdb; 
+                background-color: white;
+                padding: 40px;
+                text-align: center;
+            }
+
+            img {
+                width: 175px;
+                margin-bottom: 30px;
+            }
+
+
+            input {
+                width: 100%; 
+                box-sizing: border-box; 
+                padding: 10px;
+                margin-bottom: 8px;
+                border: 1px solid #dbdbdb;
+                border-radius: 3px;
+                background-color: #fafafa;
+                font-size: 12px;
+                outline: none;
+            }
+
+            input:focus {
+                border: 1px solid #a8a8a8;
+            }
+
+            button {
+                width: 100%;
+                padding: 8px;
+                background-color: #0095f6;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                font-weight: bold;
+                cursor: pointer;
+                margin-top: 10px;
+            }
+
+            button:hover {
+                background-color: #1877f2;
+            }
+
+            .or-section {
+                margin: 20px 0;
+                color: #8e8e8e;
+                font-size: 13px;
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+            }
+
+            .line {
+                height: 1px;
+                background-color: #dbdbdb;
+                flex: 1;
+            }
+
+            .or-text {
+                padding: 0 10px;
+            }
+
+            .facebook-link {
+                color: #385185;
+                font-weight: bold;
+                font-size: 14px;
+                cursor: pointer;
+                margin-top: 20px;
+                display: block;
+            }
+
+            .forgot-link {
+                font-size: 12px;
+                color: #00376b;
+                margin-top: 15px;
+                cursor: pointer;
+                display: block;
+            }
+
+            .signup-box {
+                margin-top: 20px;
+                font-size: 14px;
+            }
+
+            .signup-box span {
+                color: #0095f6;
+                font-weight: bold;
+                cursor: pointer;
+            }
+            img {
+                width: 150px;
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="box">
+            <img src="instagram_logo.svg.png">
+            
+            <input type="text" placeholder="Phone number, username, or email">
+            <input type="password" placeholder="Password">
+
+            <button>Log In</button>
+
+            <div class="or-section">
+                <div class="line"></div>
+                <div class="or-text">OR</div>
+                <div class="line"></div>
+            </div>
+
+            <span class="facebook-link">Log in with Facebook</span>
+            
+            <span class="forgot-link">Forgot password?</span>
+
+            <div class="signup-box">
+                Don't have an account? <span>Sign up</span>
+            </div>
+        </div>
+
+    </body>
+</html>

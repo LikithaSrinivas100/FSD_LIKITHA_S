@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BCA Time Table</title>
+    <style>
+        h1{
+            font-size: 30px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            text-align: center;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            vertical-align: middle; 
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .subject {
+            font-weight: bold;
+            display: block;
+        }
+
+        .room {
+            font-size: 12px;
+            color: #555;
+        }
+
+        
+        .lunch-break {
+            font-weight: bold;
+            font-size: 18px;
+            background-color: #f9f9f9;
+            letter-spacing: 2px;
+        }
+        
+       
+        .lunch-break-horizontal {
+            font-weight: bold;
+            font-size: 16px;
+            background-color: #fafafa;
+        }
+    </style>
+</head>
+<body>
+    <h1>BCA TIME TABLE</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Sl.No</th>
+                <th>Date</th>
+                <th>Day</th>
+                <th>Session 1<br>08:00 - 08:55</th>
+                <th>Session 2<br>09:00 - 09:55</th>
+                <th>Session 3<br>10:00 - 10:55</th>
+                <th>Session 4<br>11:05 - 12:00</th>
+                <th>Session 5<br>12:05 - 13:00</th>
+                <th>Session 6<br>13:00 - 14:00</th>
+                <th>Session 7<br>14:10 - 15:05</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>05/01/2026</td>
+                <td>Monday</td>
+                <td>
+                    <span class="subject">FSD (V-RKV)</span>
+                    <span class="room">LT 502</span>
+                </td>
+                <td>
+                    <span class="subject">VI</span>
+                    <span class="room">LT 502</span>
+                </td>
+                <td></td>
+                <td>
+                    <span class="subject">DWM</span>
+                    <span class="room">LT 502</span>
+                </td>
+                <td>
+                    <span class="subject">NLP (V-NIG)</span>
+                    <span class="room">LT 502</span>
+                </td>
+                
+                <td rowspan="5" class="lunch-break-horizontal">
+                    LUNCH<br>BREAK
+                </td>
+                <td>
+                    <span class="subject">AI (V-ABH)</span>
+                    <span class="room">LT 502</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>06/01/2026</td>
+                <td>Tuesday</td>
+                <td></td>
+                <td>
+                    <span class="subject">VI</span>
+                    <span class="room">LT 502</span>
+                </td>
+                <td>
+                    <span class="subject">SE (V-RKV)</span>
+                    <span class="room">LT 502</span>
+                </td>
+                <td>
+                    <span class="subject">CC (V-LAD)</span>
+                    <span class="room">LT 502</span>
+                </td>
+                <td>
+                    <span class="subject">DWM</span>
+                    <span class="room">LT 502</span>
+                </td>
+                <td>
+                    <span class="subject">AI (V-ABH)</span>
+                    <span class="room">LT 502</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>07/01/2026</td>
+                <td>Wednesday</td>
+                <td>
+                    <span class="subject">SE (V-RKV)</span>
+                    <span class="room">LT 502</span>
+                </td>
+                
+                <td colspan="2">
+                    <span class="subject">FSD (V-RKV)</span>
+                    <span class="room">LT 502</span>
+                </td>
+
+                <td>
+                    <span class="subject">DWM</span>
+                    <span class="room">LT 502</span>
+                </td>
+                <td>
+                    <span class="subject">NLP (V-NIG)</span>
+                    <span class="room">LT 502</span>
+                </td>
+                <td>
+                    <span class="subject">AI (V-ABH)</span>
+                    <span class="room">LT 502</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>08/01/2026</td>
+                <td>Thursday</td>
+                <td>
+                    <span class="subject">VI</span>
+                    <span class="room">LT 502</span>
+                </td>
+
+                <td colspan="2">
+                    <span class="subject">FSD (V-RKV)</span>
+                    <span class="room">LT 502</span>
+                </td>
+
+                <td>
+                    <span class="subject">DWM</span>
+                    <span class="room">LT 502</span>
+                </td>
+                <td>
+                    <span class="subject">NLP (V-NIG)</span>
+                    <span class="room">LT 502</span>
+                </td>
+                <td>
+                    <span class="subject">AI (V-ABH)</span>
+                    <span class="room">LT 502</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>09/01/2026</td>
+                <td>Friday</td>
+                <td>
+                    <span class="subject">SE (V-RKV)</span>
+                    <span class="room">LT 502</span>
+                </td>
+                <td></td>
+                <td>
+                    <span class="subject">FSD (V-RKV)</span>
+                    <span class="room">LT 502</span>
+                </td>
+                <td>
+                    <span class="subject">NLP (V-NIG)</span>
+                    <span class="room">LT 502</span>
+                </td>
+                <td>
+                    <span class="subject">VI</span>
+                    <span class="room">LT 502</span>
+                </td>
+                <td>
+                    <span class="subject">CC (V-LAD)</span>
+                    <span class="room">LT 502</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
